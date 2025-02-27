@@ -1,0 +1,64 @@
+/* 1. 기본 스타일 설정 */
+body {
+  margin: 0; /* 2. 바깥 여백 없애기 */
+  padding: 0; /* 3. 안쪽 여백 없애기 */
+  font-family: Arial, sans-serif; /* 4. 글자 스타일 설정 */
+}
+
+/* 5. 헤더 스타일 */
+header {
+  background-color: #353535; /* 6. 헤더 배경색 */
+  color: white; /* 7. 글자색 */
+  font-size: 20px; /* 8. 글자 크기 */
+  text-align: center; /* 9. 가운데 정렬 */
+  padding: 10px 0; /* 10. 위아래 여백 */
+}
+
+/* 11. 가장 위에 큰 이미지 영역 */
+.hero {
+  background-image: url('main-image.jpg'); /* 12. 배경 이미지 설정 */
+  background-size: cover; /* 13. 이미지를 화면에 꽉 채우기 */
+  background-position: center; /* 14. 이미지를 가운데 정렬 */
+  height: 400px; /* 15. 영역의 높이 설정 */
+  display: flex; /* 16. 안에 있는 내용을 정렬하기 위해 flex 사용 */
+  align-items: center; /* 17. 세로 가운데 정렬 */
+  justify-content: center; /* 18. 가로 가운데 정렬 */
+  text-align: center; /* 19. 글자도 가운데 정렬 */
+}
+
+/* 20. 글자 스타일 */
+.hero .text-box {
+  background: rgba(0, 0, 0, 0.5); /* 21. 글자 뒤 배경 어둡게 */
+  color: white; /* 22. 글자색 흰색 */
+  padding: 20px; /* 23. 안쪽 여백 */
+  border-radius: 10px; /* 24. 모서리를 둥글게 */
+}
+
+/* 25. 제품 이미지 갤러리 */
+.gallery {
+  display: flex; /* 26. 가로로 정렬 */
+  justify-content: center; /* 27. 가로 가운데 정렬 */
+  gap: 10px; /* 28. 이미지 사이 간격 */
+  padding: 20px; /* 29. 바깥 여백 */
+}
+
+/* 30. 개별 이미지 스타일 */
+.image {
+  width: 150px; /* 31. 가로 크기 */
+  height: 200px; /* 32. 세로 크기 */
+  background-size: cover; /* 33. 이미지를 꽉 채우기 */
+  background-position: center; /* 34. 이미지를 가운데 정렬 */
+}
+
+/* 35. 이미지에 각각 다른 사진 넣기 */
+.image1 {
+  background-image: url('product1.jpg');
+}
+
+.image2 {
+  background-image: url('product2.jpg');
+}
+
+.image3 {
+  background-image: url('product3.jpg');
+}
